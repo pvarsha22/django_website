@@ -1,0 +1,115 @@
+{% load embed_video_tags %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>CLASS</title>
+    </head>
+  <body style="background-color:moccasin;">
+    <h1 style="color:indianred;font-family: Comic Sans MS;font-size:50px;">Concepts uncleared??!!!</h1><br>
+    <img src="{% static 'images/img.png' %} " height="250" width="250" style="vertical-align:middle;margin:0px 100px">
+     <img src="{% static 'images/img1.png' %}" height="250" width="250" style="vertical-align:middle;margin:0px 100px"><br><br>
+    <p style="color:indianred;font-family: Comic Sans MS;font-size:30px;">
+        Here we have some interesting videos on the concepts related to the subjects
+    classwise.</p><br>
+    <img src="{% static 'images/img3.png' %} " height="250" width="250" style="vertical-align:middle;margin:10px 100px"><br><br>
+
+    <div class="videos">
+         <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 6 SUBJECTS</h2></tr>
+             <tr>
+                 {% for i in obj6 %}
+                <td>
+                    {% video i.video6 '300x300' target="_blank" %}
+                </td>
+                 {% endfor %}<br>
+             </tr>
+         </table><br>
+        <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 7 SUBJECTS</h2></tr>
+             <tr>
+                 {% for i in obj7 %}
+                <td>
+                    {% video i.video7 '300x300' %}
+                </td>
+                 {% endfor %}<br>
+             </tr>
+         </table><br>
+        <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 8 SUBJECTS</h2></tr>
+             <tr>
+                 {% for i in obj8 %}
+                <td>
+                    {% video i.video8 '300x300' %}
+                </td>
+                 {% endfor %}<br>
+             </tr>
+         </table><br>
+        <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 9 SUBJECTS</h2></tr>
+             <tr>
+                 {% for i in obj9 %}
+                <td>
+                    {% video i.video9 '300x300' %}
+                </td>
+                 {% endfor %}<br>
+             </tr>
+         </table><br>
+        <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 10 SUBJECTS</h2>
+            </tr>
+            <tr>
+                {% for i in obj10 %}
+                <td>
+                    {% video i.video10 '300x300' %}
+                </td>
+                {% endfor %}
+            </tr>
+        </table><br>
+        <table>
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 11 SUBJECTS</h2>
+            </tr>
+            <tr>
+                {% for i in obj11 %}
+                <td>
+                    {% video i.video11 '300x300' %}
+                </td>
+                {% endfor %}<br>
+            </tr>
+        </table><br>
+         <table
+            <tr>
+                <h2 style="color:indianred;font-family: Comic Sans MS;"> CLASS 12 SUBJECTS</h2>
+            </tr>
+            <tr>
+                {% for i in obj12 %}
+                <td>
+                    {% video i.video12 '300x300' %}
+                </td>
+                {% endfor %}<br>
+            </tr>
+        </table><br>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
